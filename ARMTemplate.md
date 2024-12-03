@@ -39,7 +39,7 @@ Las fuentes proporcionan información detallada sobre las Plantillas de Azure Re
   ],
   "outputs": {}
 }
-'''
+```
 ## Explicación de la Plantilla ARM
 
 - **`$schema`**: Define la versión del esquema de la plantilla ARM.

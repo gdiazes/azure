@@ -40,34 +40,41 @@ Las fuentes proporcionan información detallada sobre las Plantillas de Azure Re
   "outputs": {}
 }
 
+## Explicación de la Plantilla ARM
 
-Explicación de la plantilla
-$schema: Define la versión del esquema de la plantilla ARM.
-contentVersion: Define la versión de la plantilla.
-parameters: Define los parámetros que se pueden personalizar al desplegar la plantilla. En este caso, se definen dos parámetros:
-storageAccountName: El nombre de la cuenta de almacenamiento.
-location: La ubicación de la cuenta de almacenamiento. El valor por defecto es la ubicación del grupo de recursos actual.
-variables: Permite definir variables que se pueden utilizar en la plantilla. En este ejemplo, no se utilizan variables.
-resources: Define los recursos que se van a crear. En este caso, se define un único recurso: una cuenta de almacenamiento.
-type: Define el tipo de recurso.
-apiVersion: Define la versión de la API que se va a utilizar.
-name: Define el nombre del recurso. Se utiliza el valor del parámetro storageAccountName.
-location: Define la ubicación del recurso. Se utiliza el valor del parámetro location.
-sku: Define el plan de la cuenta de almacenamiento. En este caso, se utiliza el plan Standard_LRS.
-kind: Define el tipo de cuenta de almacenamiento. En este caso, se utiliza StorageV2.
-properties: Define las propiedades del recurso. En este caso, no se definen propiedades adicionales.
-outputs: Permite definir las salidas de la plantilla. En este ejemplo, no se definen salidas.
-Uso de la plantilla
-Para utilizar esta plantilla, se puede utilizar Azure Portal, Azure PowerShell, la CLI de Azure o la API de REST de Azure. Al desplegar la plantilla, se deben proporcionar los valores para los parámetros storageAccountName y location.
+- **`$schema`**: Define la versión del esquema de la plantilla ARM.
+- **`contentVersion`**: Define la versión de la plantilla.
+- **`parameters`**:
+  - **`storageAccountName`**: El nombre de la cuenta de almacenamiento.
+  - **`location`**: La ubicación de la cuenta de almacenamiento. El valor por defecto es la ubicación del grupo de recursos actual.
+- **`variables`**: Permite definir variables que se pueden utilizar en la plantilla. En este ejemplo, no se utilizan variables.
+- **`resources`**: Define los recursos que se van a crear. En este caso, se define un único recurso: una cuenta de almacenamiento.
+  - **`type`**: Define el tipo de recurso.
+  - **`apiVersion`**: Define la versión de la API que se va a utilizar.
+  - **`name`**: Define el nombre del recurso. Se utiliza el valor del parámetro `storageAccountName`.
+  - **`location`**: Define la ubicación del recurso. Se utiliza el valor del parámetro `location`.
+  - **`sku`**: Define el plan de la cuenta de almacenamiento. En este caso, se utiliza el plan `Standard_LRS`.
+  - **`kind`**: Define el tipo de cuenta de almacenamiento. En este caso, se utiliza `StorageV2`.
+  - **`properties`**: Define las propiedades del recurso. En este caso, no se definen propiedades adicionales.
+- **`outputs`**: Permite definir las salidas de la plantilla. En este ejemplo, no se definen salidas.
 
-Ejemplos de escenarios de uso de plantillas
-Creación de una infraestructura completa para una aplicación web, incluyendo máquinas virtuales, bases de datos, redes virtuales, etc.
-Despliegue de un entorno de desarrollo, pruebas o producción con la misma configuración.
-Automatización de la creación de recursos para diferentes departamentos o proyectos dentro de una organización.
-Implementación de recursos en múltiples suscripciones o regiones de Azure.
-Consideraciones importantes
-Las plantillas ARM son una herramienta poderosa para la gestión de la infraestructura en Azure, pero es importante comprender su funcionamiento y planificar cuidadosamente su uso.
-Es importante utilizar un sistema de control de versiones para gestionar las plantillas ARM y realizar un seguimiento de los cambios.
-Es recomendable utilizar herramientas de validación para comprobar la sintaxis y la estructura de las plantillas ARM antes de desplegarlas.
-Información adicional
-Para obtener más información sobre las plantillas ARM, se puede consultar la documentación oficial de Microsoft: Documentación de Azure Resource Manager
+## Uso de la Plantilla
+
+Para utilizar esta plantilla, se puede emplear Azure Portal, Azure PowerShell, la CLI de Azure, o la API de REST de Azure. Al desplegar la plantilla, se deben proporcionar los valores para los parámetros `storageAccountName` y `location`.
+
+## Ejemplos de Escenarios de Uso de Plantillas
+
+- Creación de una infraestructura completa para una aplicación web, incluyendo máquinas virtuales, bases de datos, redes virtuales, etc.
+- Despliegue de un entorno de desarrollo, pruebas o producción con la misma configuración.
+- Automatización de la creación de recursos para diferentes departamentos o proyectos dentro de una organización.
+- Implementación de recursos en múltiples suscripciones o regiones de Azure.
+
+## Consideraciones Importantes
+
+- Las plantillas ARM son una herramienta poderosa para la gestión de la infraestructura en Azure, pero es importante comprender su funcionamiento y planificar cuidadosamente su uso.
+- Es importante utilizar un sistema de control de versiones para gestionar las plantillas ARM y realizar un seguimiento de los cambios.
+- Es recomendable utilizar herramientas de validación para comprobar la sintaxis y la estructura de las plantillas ARM antes de desplegarlas.
+
+## Información Adicional
+
+Para obtener más información sobre las plantillas ARM, se puede consultar la documentación oficial de Microsoft en la [Documentación de Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/).

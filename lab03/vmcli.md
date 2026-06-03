@@ -24,8 +24,22 @@ az vm create \
   --size Standard_D2s_v3 \
   --admin-username $username \
   --admin-password $password \
-  --nsg-rule RDP HTTP HTTPS --verbose \
   --location $location
+
+# Abrir puerto HTTP (80)
+az vm open-port \
+  --resource-group "$rgName" \
+  --name "$vmName" \
+  --port 80 \
+  --priority 1010
+
+# Abrir puerto HTTPS (443)
+az vm open-port \
+  --resource-group "$rgName" \
+  --name "$vmName" \
+  --port 443 \
+  --priority 1020
+
 ```
 
 ### Explicación de los parámetros clave:

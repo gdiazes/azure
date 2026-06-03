@@ -24,6 +24,7 @@ az vm create \
   --size Standard_D2s_v3 \
   --admin-username $username \
   --admin-password $password \
+  --nsg-rule RDP HTTP HTTPS --verbose \
   --location $location
 ```
 

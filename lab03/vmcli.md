@@ -1,4 +1,9 @@
 ### Comando para ejecutar en la consola (CLI de Azure)
+# Definir el nombre de usuario y la contraseña de administrador.
+```bash
+username="demoadmin"
+password="Tecsup0000@@"
+```
 
 Ejecuta el siguiente bloque de comandos. Este script crea primero el grupo de recursos y luego la máquina virtual:
 

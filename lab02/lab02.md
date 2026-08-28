@@ -1,5 +1,5 @@
 
-## 💳 1. Tabla Comparativa de Licencias y Activación de Prueba Gratuita (*Trial*)
+##  1. Tabla Comparativa de Licencias y Activación de Prueba Gratuita (*Trial*)
 
 ### 1.1 Matriz de Capacidades por Nivel de Licencia
 
